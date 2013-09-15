@@ -43,7 +43,13 @@ var board = '<game>' +
 '</game>';
 
 var hq = new hQuery(board);
+hq.aliases.elements = {
+  card: {
+    name: ['wheat']
+  }
+};
 
+console.log(hq.find('wheat'));
 console.log(hq.find('first:3 card'));
 console.log(hq.find('last card'));
 console.log(hq.find('card in player:1 hand'));
@@ -56,3 +62,8 @@ console.log(hq.find('value:2 suit:S card in my:self hand', {player:1}));
 console.log(hq.find('highest:value suit:S card in my:self hand'));
 console.log(hq.find('highest:value suit:S card'));
 console.log(hq.find('player of hand with highest:value suit:H card'));
+
+console.log(hq.find('quantity of card in player:1 hand'));
+console.log(hq.find('presence of suit:H card in player:1 hand'));
+console.log(hq.find('absence of suit:D card in player:1 hand'));
+console.log(hq.find('sum:value of card in player:1 hand'));

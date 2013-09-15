@@ -30,13 +30,13 @@ exports.board = '<game>' +
 '</hand>' +
 '' +
 '<board>' +
-'  <asia>' +
-'    <kamchatka>' +
+'  <continent name="asia">' +
+'    <country name="kamchatka">' +
 '      <army player="1"/>' +
 '      <army player="1"/>' +
 '      <army player="1"/>' +
-'    </kamchatka>' +
-'  </asia>' +
+'    </country>' +
+'  </continent>' +
 '</board>' +
 '</game>';
 
